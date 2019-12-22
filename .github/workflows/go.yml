@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Test
-      run: GOFLAGS="-mod=vendor" go test -v ./...
+      run: make test
       
     - name: Build
-      run: GOFLAGS="-mod=vendor" go build -v ./...
+      run: make build
